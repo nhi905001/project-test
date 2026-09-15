@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int numbers[5] = {1, 2, 3, 4, 5};
+    char buffer[10];
 
-    printf("%d\n", numbers[10]);
+    strcpy(buffer, "This string is too long for buffer");
+
+    printf("%s\n", buffer);
 
     return 0;
 }
